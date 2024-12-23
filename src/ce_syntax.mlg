@@ -1,0 +1,15 @@
+DECLARE PLUGIN "coq-my-plugin.plugin"
+
+{
+
+open Ltac_plugin
+
+}
+
+TACTIC EXTEND Hello
+| [ "hello" ] -> { Ce_api.printHello }
+END
+
+VERNAC COMMAND EXTEND CallToC CLASSIFIED AS QUERY
+| [ "CallC" ] -> { let i = Ce_api.callC () in Feedback.msg_warning Pp.(int i) }
+END
