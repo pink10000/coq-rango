@@ -1,12 +1,13 @@
 (library
- (name my_plugin)                   ; This is the name you will use in
+ (name coq_rango)                   ; This is the name you will use in
                                     ; Coq's `Declare ML Module`, and
                                     ; the name of the main OCaml
                                     ; module of your plugin.
 
- (public_name coq-my-plugin.plugin) ; This makes the plugin
+ (public_name coq-rango.plugin)     ; This makes the plugin
                                     ; installable; recommended, must
                                     ; match opam package name.
+ (modes byte native)
 
  (synopsis "My Coq plugin")         ; Synopsis, used in META generation.
 

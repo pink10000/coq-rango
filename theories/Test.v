@@ -1,4 +1,6 @@
-Require Import MyPlugin.
+Set Warnings "-546".
+
+Require Import CoqRango.
 
 CallC.
 
@@ -7,3 +9,5 @@ Proof.
 hello. now auto.
 Qed.
 
+Print foo.
+Print hello.

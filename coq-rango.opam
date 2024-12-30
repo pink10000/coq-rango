@@ -1,6 +1,8 @@
 opam-version: "2.0"
 maintainer: "you@example.com"
 
+name: "coq_rango"
+
 homepage: "https://github.com/your-github/my-plugin"
 dev-repo: "git+https://github.com/your-github/my-plugin.git"
 bug-reports: "https://github.com/your-github/my-plugin/issues"
@@ -16,7 +18,7 @@ build: ["dune" "build" "-p" name "-j" jobs]
 depends: [
   "ocaml" {>= "4.07.1"}
   "dune" {>= "2.5"}
-  "coq" {>= "8.14" & < "8.15"}
+  "coq" {>= "8.14" & < "8.18"}
 ]
 
 tags: [
